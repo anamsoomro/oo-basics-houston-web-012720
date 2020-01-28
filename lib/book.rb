@@ -3,6 +3,8 @@ class Book
         @title = title
     end
 
+=begin this is the inefficient way of doing it 
+
     def title
         @title
     end
@@ -31,7 +33,16 @@ class Book
         @genre
     end
 
+=end
+
+    attr_accessor :author, :page_count, :genre
+    attr_reader :title 
+
     def turn_page
         puts "Flipping the page...wow, you read fast!"
     end
+
+
+
+
 end
